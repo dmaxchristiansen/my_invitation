@@ -1,0 +1,10 @@
+{% extends 'base_content.html' %}
+{% block title %}
+    My Profile
+{% endblock %}
+{% block content %}
+<h1 class="display-2 text-info mb-4">MyInvitation Profile</h1>
+<h1 class="display-4"><span class="text-info">Name: </span> {{user.first_name}} {{user.last_name}}</h1>
+<h1 class="display-4 mb-5"><span class="text-info">Email: </span> {{user.email}}</h1>
+<h1 class="font-italic"><span class="text-info">MyInvitation Member Since: </span> {{user.created_at}}</h1>
+{% endblock %}
